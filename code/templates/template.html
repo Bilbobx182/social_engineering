@@ -1,0 +1,88 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <style>
+        body {
+            background-color: #23272A;
+            color: floralwhite;
+            margin: 0 !important;
+            padding: 0 !important;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            background-color: #2C2F33;
+        }
+
+        .row {
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            padding: 20px;
+            justify-content: center;
+
+        }
+
+        #links {
+            float: right;
+        }
+
+        #main {
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="row" style="background-color: #7289DA;">
+         <a href="https://www.linkedin.com/in/onuallainc/" class="fa fa-linkedin"></a>
+        <h1>TaifuWiddies' Experiment</h1>
+        <p style="font-size: 12px;">Tell me your thoughts on the socials :)</p>
+        <a href="https://github.com/Bilbobx182" class="fa fa-github"></a>
+    </div>
+
+    <div id="main">
+    <span>
+      I told you, and you still didn't listen? You're pretty nosy!🤔  <br>
+      This was a social engineering / art experiment on how likely people are to scan a random QR.
+    </span>
+
+        <p style="margin: 25px">You are person number <b>{{person_num}}</b> to have clicked on this.</p>
+    </div>
+
+    <div id="plzlearn">
+        <p>A lot of places harvest data for money, please try be more secure online and don't follow random sites.</p>
+        <a href="https://coveryourtracks.eff.org/learn"><p> If you want to learn more see here.</p></a>
+        <p>
+            These are the things they can access just by the browser :
+        <ul>
+            <li>User Agent</li>
+            <li>Platform</li>
+            <li>Timezone</li>
+            <li>AudioContext fingerprint</li>
+        </ul>
+        Apps on your phone can build a more unique fingerprint <i>location, battery level, battery capacity, RAM, CPU,etc,etc</i>
+        <br>
+        Be safe, love ya face.
+        <br>
+        Widdies.
+    </div>
+</div>
+</body>
+</html>
