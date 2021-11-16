@@ -16,6 +16,11 @@ def get_count():
 
 @app.route("/")
 def route():
-    print("returning")
     return render_template('template.html', person_num=get_count())
-app.run()
+
+@app.route("/ping")
+def routeb():
+    return render_template('template.html', person_num=get_count())
+
+if __name__ == "__main__":
+    app.run()
