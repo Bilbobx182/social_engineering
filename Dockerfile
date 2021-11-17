@@ -9,5 +9,5 @@ COPY ./code /app
 COPY ./requirements.txt /app/requirements.txt
 WORKDIR app
 RUN pip install -r requirements.txt
-EXPOSE 80:80
-ENTRYPOINT python main.py
+EXPOSE 443:443
+ENTRYPOINT python /app/main.py
