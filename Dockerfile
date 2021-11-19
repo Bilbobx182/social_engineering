@@ -5,9 +5,8 @@ FROM python:3.8.2
 ENV FLASK_APP=main.py
 ENV FLASK_ENV=development
 ENV PATH /home/user/miniconda3/bin/:$PATH
-COPY ./code /app
-COPY ./requirements.txt /app/requirements.txt
-WORKDIR app
+COPY ./code ./app
+COPY ./requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 EXPOSE 443:443
-ENTRYPOINT python /app/main.py
+ENTRYPOINT python main.py

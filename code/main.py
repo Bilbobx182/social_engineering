@@ -18,9 +18,5 @@ def get_count():
 def route():
     return render_template('template.html', person_num=get_count())
 
-@app.route("/ping")
-def routeb():
-    return render_template('template.html', person_num=get_count())
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", ssl_context=('cert.pem', 'privkey.pem'))
+    app.run(host="0.0.0.0", ssl_context=('./ssl/cert.pem', './ssl/privkey.pem'))
