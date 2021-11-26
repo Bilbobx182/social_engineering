@@ -5,6 +5,4 @@ docker build \
   --tag social_engineering:latest \
   .
 
-docker run -d -p 80:80 \
---mount source=/etc/letsencrypt/live/taifuwiddies.net,destination=/app\
-social_engineering:latest
+docker run -v /etc/letsencrypt/live/taifuwiddies.net:/ssl  -p 443:443 social_engineering:latest

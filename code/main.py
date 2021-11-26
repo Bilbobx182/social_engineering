@@ -21,6 +21,7 @@ def get_count():
 
 @app.route("/")
 def route():
+    logger.info(f"Incoming is :{request.remote_addr}")
     return render_template('template.html', person_num=get_count())
 
 
