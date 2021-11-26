@@ -1,8 +1,14 @@
 import json
 from flask import Flask, render_template,request,redirect
+import logging
+
 app = Flask(__name__)
 
-# Very secure "database" lol that just stores the count of times this page was accessed.
+logger = logging.getLogger('werkzeug')
+handler = logging.FileHandler('output.log')
+logger.addHandler(handler)
+
+
 def get_count():
     with open('database.json') as f:
         data = json.load(f)
